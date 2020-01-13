@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.primera {
+    width: 100%;
+    height: auto;
+    background: hsl(193, 100%, 96%) url("./images/bg-hero-desktop.svg") no-repeat;
+    background-size: cover;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+}
+
+.primera>nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 5em;
+}
+
+.primera>nav>img {
+    width: auto;
+    height: 2em;
+}
+
+.primera>nav>button {
+    box-shadow: 1px 2px 8px 1px #0000001a;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 28px;
+    cursor: pointer;
+    color: #000000;
+    padding: 16px 69px;
+    text-decoration: none;
+}
+
+.primera>main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas: "textos imagen";
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.primera__textos {
+    grid-area: textos;
+    padding: 0 0 0 5em;
+}
+
+.primera__textos>h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.primera__textos>p {
+    line-height: 1.5;
+    margin: 1.5em 0 0 0;
+}
+
+.primera__textos>button {
+    box-shadow: 1px 2px 8px 1px #0000001a;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 16px 69px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 2.5em;
+}
+
+.primera__imagen {
+    grid-area: imagen;
+    padding: 0 5em 0;
+}
+
+.primera__imagen>img {
+    width: 100%;
+    height: auto;
+}
+
+.segunda {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0 0 3em;
+    box-shadow: 1px 2px 7px 1px #0000001a;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-textos {
+    padding: 2em 3em 2em 2em;
+}
+
+.card-imagen {
+    width: 70%;
+    height: auto;
+    padding: 2em 2em;
+}
+
+.card-imagen>img {
+    width: 100%;
+    height: auto;
+}
+
+.invert {
+    order: 1;
+    padding: 2em 2em 2em 3em;
+}
+
+.card__one {
+    width: 60%;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 1px 2px 7px 1px #0000001a;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+
+.tercera {
+    background-color: hsl(192, 100%, 9%);
+    padding: 7em 5em 2em;
+    color: white;
+}
+
+.tercera__logo>img {
+    fill: white;
+    margin-bottom: 3em;
+}
+
+.tercera__container {
+    display: grid;
+    grid-template-columns: 30% repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "uno dos tres cuatro";
+    grid-gap: 4em;
+}
+
+.tercera__container-sub {
+    grid-area: uno;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "iconouno textouno" "iconodos textodos" "iconotres textotres";
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+
+.tercera__container-sub>p {
+    margin: 0 1em 1em 1em;
+}
+
+.tercera__container-three {
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+}
+
+.tercera__container-three>a {
+    text-decoration: none;
+    color: white;
+}
+
+.tercera__container-four {
+    grid-area: tres;
+    display: flex;
+    flex-direction: column;
+}
+
+.tercera__container-four>a {
+    text-decoration: none;
+    color: white;
+}
+
+.tercera__container-five {
+    grid-area: cuatro;
+}
+
+.tercera__container-five>a {
+    text-decoration: none;
+    color: white;
+}
+
+.tercera__container-six {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
