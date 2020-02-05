@@ -15,7 +15,7 @@ h1 {
     background: hsl(193, 100%, 96%) url("./images/bg-hero-desktop.svg") no-repeat;
     background-size: cover;
     padding-bottom: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 10em;
 }
 
 .primera>nav {
@@ -38,6 +38,7 @@ h1 {
     color: #000000;
     padding: 16px 69px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .primera>main {
@@ -63,6 +64,7 @@ h1 {
 .primera__textos>p {
     line-height: 1.5;
     margin: 1.5em 0 0 0;
+    padding: 0 0 20px 0;
 }
 
 .primera__textos>button {
@@ -104,16 +106,28 @@ h1 {
     border: none;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 3em;
 }
 
 .card-textos {
     padding: 2em 3em 2em 2em;
+    max-width: 40%;
+    line-height: 1.5;
+}
+
+.card-textos>h3 {
+    font-size: 1.7em;
+    margin-bottom: 0;
+}
+
+.card-textos>p {
+    font-size: 1.1em;
 }
 
 .card-imagen {
-    width: 70%;
+    max-width: 30%;
     height: auto;
     padding: 2em 2em;
 }
@@ -129,8 +143,8 @@ h1 {
 }
 
 .card__one {
-    width: 60%;
-    height: auto;
+    width: 50%;
+    height: 200px;
     background: #ffffff;
     box-shadow: 1px 2px 7px 1px #0000001a;
     border: none;
@@ -140,12 +154,34 @@ h1 {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 40px;
+    top: 87px;
+    padding: 1em 0;
+}
+
+.card__one>h3 {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+}
+
+.card__one>button {
+    box-shadow: 1px 2px 8px 1px #0000001a;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 16px 69px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 60px;
+    width: 300px;
+    /* margin-top: 2.5em; */
 }
 
 .tercera {
     background-color: hsl(192, 100%, 9%);
-    padding: 7em 5em 2em;
+    padding: 10em 5em 2em;
     color: white;
 }
 
@@ -156,10 +192,10 @@ h1 {
 
 .tercera__container {
     display: grid;
-    grid-template-columns: 30% repeat(3, 1fr);
+    grid-template-columns: 45% repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "uno dos tres cuatro";
-    grid-gap: 4em;
+    grid-gap: 3em;
 }
 
 .tercera__container-sub {
@@ -172,8 +208,19 @@ h1 {
     grid-gap: 10px;
 }
 
+.tercera__container-sub>img {
+    padding-top: 13px;
+}
+
+.iconouno {
+    padding: 5px;
+}
+
 .tercera__container-sub>p {
-    margin: 0 1em 1em 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 7px;
 }
 
 .tercera__container-three {
@@ -185,6 +232,9 @@ h1 {
 .tercera__container-three>a {
     text-decoration: none;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 .tercera__container-four {
@@ -196,15 +246,33 @@ h1 {
 .tercera__container-four>a {
     text-decoration: none;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 .tercera__container-five {
     grid-area: cuatro;
+    display: flex;
+    flex-direction: row;
 }
 
 .tercera__container-five>a {
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tercera__container-five>a>i {
+    padding: 5px;
     color: white;
+    text-decoration: none;
 }
 
 .tercera__container-six {
