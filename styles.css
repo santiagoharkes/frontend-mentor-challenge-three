@@ -1,383 +1,170 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-    font-family: 'Poppins', sans-serif;
-}
-
-.primera {
-    width: 100%;
-    height: auto;
-    background: hsl(193, 100%, 96%) url("./images/bg-hero-desktop.svg") no-repeat;
-    background-size: cover;
-    padding-bottom: 3em;
-    margin-bottom: 10em;
-}
-
-.primera>nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em 2em;
-}
-
-.primera>nav>img {
-    width: auto;
-    height: 1.5em;
-}
-
-.primera>nav>button {
-    box-shadow: 1px 2px 8px 1px #0000001a;
-    border: none;
-    background-color: #ffffff;
-    border-radius: 28px;
-    cursor: pointer;
-    color: #000000;
-    padding: 16px 69px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.primera>main {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    grid-template-areas: "textos imagen";
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.primera__textos {
-    grid-area: textos;
-    padding: 0 0 0 5em;
-}
-
-.primera__textos>h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.primera__textos>p {
-    line-height: 1.5;
-    margin: 1.5em 0 0 0;
-    padding: 0 0 20px 0;
-}
-
-.primera__textos>button {
-    box-shadow: 1px 2px 8px 1px #0000001a;
-    border: none;
-    background-color: hsl(322, 100%, 66%);
-    border-radius: 28px;
-    cursor: pointer;
-    color: #ffffff;
-    padding: 16px 69px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 2.5em;
-}
-
-.primera__imagen {
-    grid-area: imagen;
-    padding: 0 5em 0;
-}
-
-.primera__imagen>img {
-    width: 100%;
-    height: auto;
-}
-
-.segunda {
-    background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    width: 85%;
-    height: auto;
-    background: transparent;
-    margin: 0 0 3em;
-    box-shadow: 1px 2px 7px 1px #0000001a;
-    border: none;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3em;
-}
-
-.card-textos {
-    padding: 2em 3em 2em 2em;
-    max-width: 40%;
-    line-height: 1.5;
-}
-
-.card-textos>h3 {
-    font-size: 1.7em;
-    margin-bottom: 0;
-}
-
-.card-textos>p {
-    font-size: 1.1em;
-}
-
-.card-imagen {
-    max-width: 30%;
-    height: auto;
-    padding: 2em 2em;
-}
-
-.card-imagen>img {
-    width: 100%;
-    height: auto;
-}
-
-.invert {
-    order: 1;
-    padding: 2em 2em 2em 3em;
-}
-
-.card__one {
-    width: 50%;
-    height: 200px;
-    background: #ffffff;
-    box-shadow: 1px 2px 7px 1px #0000001a;
-    border: none;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 87px;
-    padding: 1em 0;
-}
-
-.card__one>h3 {
-    font-size: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 0;
-}
-
-.card__one>button {
-    box-shadow: 1px 2px 8px 1px #0000001a;
-    border: none;
-    background-color: hsl(322, 100%, 66%);
-    border-radius: 28px;
-    cursor: pointer;
-    color: #ffffff;
-    padding: 16px 69px;
-    text-decoration: none;
-    font-weight: bold;
-    height: 60px;
-    width: 300px;
-    /* margin-top: 2.5em; */
-}
-
-.tercera {
-    background-color: hsl(192, 100%, 9%);
-    padding: 10em 5em 2em;
-    color: white;
-}
-
-.tercera__logo>img {
-    fill: white;
-    margin-bottom: 3em;
-}
-
-.tercera__container {
-    display: grid;
-    grid-template-columns: 45% repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "uno dos tres cuatro";
-    grid-gap: 3em;
-}
-
-.tercera__container-sub {
-    grid-area: uno;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "iconouno textouno" "iconodos textodos" "iconotres textotres";
-    grid-auto-flow: column;
-    grid-gap: 10px;
-}
-
-.tercera__container-sub>img {
-    padding-top: 13px;
-}
-
-.iconouno {
-    padding: 5px;
-}
-
-.tercera__container-sub>p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 7px;
-}
-
-.tercera__container-three {
-    grid-area: dos;
-    display: flex;
-    flex-direction: column;
-}
-
-.tercera__container-three>a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-.tercera__container-four {
-    grid-area: tres;
-    display: flex;
-    flex-direction: column;
-}
-
-.tercera__container-four>a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-.tercera__container-five {
-    grid-area: cuatro;
-    display: flex;
-    flex-direction: row;
-}
-
-.tercera__container-five>a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid white;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.tercera__container-five>a>i {
-    padding: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-.tercera__container-six {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .primera {
-        margin-bottom: 5em;
+    @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+    body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
     }
+    
+    h1 {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .primera {
+        width: 100%;
+        height: auto;
+        background: hsl(193, 100%, 96%) url("./images/bg-hero-desktop.svg") no-repeat;
+        background-size: cover;
+        padding-bottom: 3em;
+        margin-bottom: 10em;
+    }
+    
     .primera>nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3em 2em;
     }
-    .primera>nav>button {
-        padding: 15px 35px;
+    
+    .primera>nav>img {
+        width: auto;
+        height: 1.5em;
     }
+    
+    .primera>nav>button {
+        box-shadow: 1px 2px 8px 1px #0000001a;
+        border: none;
+        background-color: #ffffff;
+        border-radius: 28px;
+        cursor: pointer;
+        color: #000000;
+        padding: 16px 69px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
     .primera>main {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: "textos" "imagen";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas: "textos imagen";
         width: 100%;
         justify-content: center;
         align-items: center;
     }
+    
     .primera__textos {
         grid-area: textos;
-        padding: 0 2em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 0 0 0 5em;
     }
+    
     .primera__textos>h1 {
-        font-size: 2em;
+        font-size: 2.5em;
         margin: 0;
-        text-align: center;
     }
+    
     .primera__textos>p {
         line-height: 1.5;
         margin: 1.5em 0 0 0;
-        padding: 0 2em;
-        text-align: center;
+        padding: 0 0 20px 0;
     }
+    
     .primera__textos>button {
+        box-shadow: 1px 2px 8px 1px #0000001a;
+        border: none;
+        background-color: hsl(322, 100%, 66%);
+        border-radius: 28px;
+        cursor: pointer;
+        color: #ffffff;
         padding: 16px 69px;
+        text-decoration: none;
         font-weight: bold;
-        margin: 2.5em 0;
-        max-width: 50%;
+        margin-top: 2.5em;
     }
+    
     .primera__imagen {
-        display: flex;
-        justify-content: center;
+        grid-area: imagen;
+        padding: 0 5em 0;
     }
+    
     .primera__imagen>img {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
-    .card {
+    
+    .segunda {
+        background-color: #ffffff;
         display: flex;
-        flex-direction: column-reverse;
-        margin: 2em 5em;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+    
+    .card {
+        width: 85%;
+        height: auto;
+        background: transparent;
+        margin: 0 0 3em;
+        box-shadow: 1px 2px 7px 1px #0000001a;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em;
+    }
+    
+    .card-textos {
+        padding: 2em 3em 2em 2em;
+        max-width: 40%;
+        line-height: 1.5;
+    }
+    
+    .card-textos>h3 {
+        font-size: 1.7em;
+        margin-bottom: 0;
+    }
+    
+    .card-textos>p {
+        font-size: 1.1em;
+    }
+    
     .card-imagen {
-        max-width: 70%;
+        max-width: 30%;
         height: auto;
         padding: 2em 2em;
     }
+    
     .card-imagen>img {
         width: 100%;
         height: auto;
     }
-    .card-textos {
-        padding: 2em 3em 2em 2em;
-        max-width: 80%;
-        line-height: 1.5;
-    }
-    .card-textos>h3 {
-        text-align: center;
-    }
-    .card-textos>p {
-        text-align: center;
-    }
+    
     .invert {
-        order: 0;
+        order: 1;
+        padding: 2em 2em 2em 3em;
     }
+    
     .card__one {
-        margin: 2em 5em;
-        width: 85%;
-        height: auto;
+        width: 50%;
+        height: 200px;
+        background: #ffffff;
         box-shadow: 1px 2px 7px 1px #0000001a;
         border: none;
-        padding: 3em;
-        top: 110px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 87px;
+        padding: 1em 0;
     }
+    
     .card__one>h3 {
         font-size: 1.5em;
         font-family: 'Poppins', sans-serif;
         margin-top: 0;
     }
+    
     .card__one>button {
         box-shadow: 1px 2px 8px 1px #0000001a;
         border: none;
@@ -390,16 +177,28 @@ h1 {
         font-weight: bold;
         height: 60px;
         width: 300px;
+        /* margin-top: 2.5em; */
     }
+    
+    .tercera {
+        background-color: hsl(192, 100%, 9%);
+        padding: 10em 5em 2em;
+        color: white;
+    }
+    
+    .tercera__logo>img {
+        fill: white;
+        margin-bottom: 3em;
+    }
+    
     .tercera__container {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 30% repeat(2, auto);
-        grid-template-areas: "uno" "dos" "tres";
-        grid-gap: 2em;
-        justify-content: center;
-        margin-bottom: 50px;
+        grid-template-columns: 45% repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "uno dos tres cuatro";
+        grid-gap: 3em;
     }
+    
     .tercera__container-sub {
         grid-area: uno;
         display: grid;
@@ -409,23 +208,28 @@ h1 {
         grid-auto-flow: column;
         grid-gap: 10px;
     }
+    
     .tercera__container-sub>img {
         padding-top: 13px;
     }
+    
     .iconouno {
         padding: 5px;
     }
+    
     .tercera__container-sub>p {
         font-family: 'Open Sans', sans-serif;
         font-size: 1.2em;
         margin: 0;
         padding: 7px;
     }
+    
     .tercera__container-three {
         grid-area: dos;
         display: flex;
         flex-direction: column;
     }
+    
     .tercera__container-three>a {
         text-decoration: none;
         color: white;
@@ -433,12 +237,13 @@ h1 {
         font-size: 1.2em;
         margin-bottom: 15px;
     }
+    
     .tercera__container-four {
-        grid-area: dos;
+        grid-area: tres;
         display: flex;
         flex-direction: column;
-        margin-top: 130px;
     }
+    
     .tercera__container-four>a {
         text-decoration: none;
         color: white;
@@ -446,38 +251,258 @@ h1 {
         font-size: 1.2em;
         margin-bottom: 15px;
     }
+    
     .tercera__container-five {
-        grid-area: tres;
+        grid-area: cuatro;
         display: flex;
         flex-direction: row;
-        justify-content: center;
     }
+    
     .tercera__container-five>a {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border: 1px solid white;
         border-radius: 50%;
-        margin-right: 30px;
+        margin-right: 10px;
     }
+    
     .tercera__container-five>a>i {
         padding: 5px;
         color: white;
         text-decoration: none;
-        font-size: 30px;
     }
+    
     .tercera__container-six {
         display: flex;
         justify-content: flex-end;
         margin-top: 10px;
     }
-    .tercera__container-six {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 30px;
+    
+    @media screen and (max-width: 768px) {
+        .primera {
+            margin-bottom: 5em;
+        }
+        .primera>nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3em 2em;
+        }
+        .primera>nav>button {
+            padding: 15px 35px;
+        }
+        .primera>main {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: "textos" "imagen";
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .primera__textos {
+            grid-area: textos;
+            padding: 0 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .primera__textos>h1 {
+            font-size: 2em;
+            margin: 0;
+            text-align: center;
+        }
+        .primera__textos>p {
+            line-height: 1.5;
+            margin: 1.5em 0 0 0;
+            padding: 0 2em;
+            text-align: center;
+        }
+        .primera__textos>button {
+            padding: 16px 69px;
+            font-weight: bold;
+            margin: 2.5em 0;
+            max-width: 50%;
+        }
+        .primera__imagen {
+            display: flex;
+            justify-content: center;
+        }
+        .primera__imagen>img {
+            width: 80%;
+            height: auto;
+        }
+        .card {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 2em 5em;
+        }
+        .card-imagen {
+            max-width: 70%;
+            height: auto;
+            padding: 2em 2em;
+        }
+        .card-imagen>img {
+            width: 100%;
+            height: auto;
+        }
+        .card-textos {
+            padding: 2em 3em 2em 2em;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+        .card-textos>h3 {
+            text-align: center;
+        }
+        .card-textos>p {
+            text-align: center;
+        }
+        .invert {
+            order: 0;
+        }
+        .card__one {
+            margin: 2em 5em;
+            width: 85%;
+            height: auto;
+            box-shadow: 1px 2px 7px 1px #0000001a;
+            border: none;
+            padding: 3em;
+            top: 110px;
+        }
+        .card__one>h3 {
+            font-size: 1.5em;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0;
+        }
+        .card__one>button {
+            box-shadow: 1px 2px 8px 1px #0000001a;
+            border: none;
+            background-color: hsl(322, 100%, 66%);
+            border-radius: 28px;
+            cursor: pointer;
+            color: #ffffff;
+            padding: 16px 69px;
+            text-decoration: none;
+            font-weight: bold;
+            height: 60px;
+            width: 300px;
+        }
+        .tercera__container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 30% repeat(2, auto);
+            grid-template-areas: "uno" "dos" "tres";
+            grid-gap: 2em;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .tercera__container-sub {
+            grid-area: uno;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "iconouno textouno" "iconodos textodos" "iconotres textotres";
+            grid-auto-flow: column;
+            grid-gap: 10px;
+        }
+        .tercera__container-sub>img {
+            padding-top: 13px;
+        }
+        .iconouno {
+            padding: 5px;
+        }
+        .tercera__container-sub>p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 7px;
+        }
+        .tercera__container-three {
+            grid-area: dos;
+            display: flex;
+            flex-direction: column;
+        }
+        .tercera__container-three>a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .tercera__container-four {
+            grid-area: dos;
+            display: flex;
+            flex-direction: column;
+            margin-top: 130px;
+        }
+        .tercera__container-four>a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .tercera__container-five {
+            grid-area: tres;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .tercera__container-five>a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+        .tercera__container-five>a>i {
+            padding: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .tercera__container-six {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .tercera__container-six {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
     }
-}
+    
+    @media screen and (max-width: 580px) {
+        .primera>nav {
+            margin-bottom: 4em;
+        }
+        .primera__textos>h1 {
+            font-size: 1.5em;
+        }
+        .primera__textos>p {
+            padding: 0;
+        }
+        .primera__textos>button {
+            max-width: 80%;
+            font-size: 10px;
+        }
+        .primera__imagen {
+            grid-area: imagen;
+            padding: 0 2em 0;
+            margin-top: 50px;
+        }
+        .primera__imagen>img {
+            width: 100%;
+            height: auto;
+        }
+    }
