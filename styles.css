@@ -364,4 +364,120 @@ h1 {
     .invert {
         order: 0;
     }
+    .card__one {
+        margin: 2em 5em;
+        width: 85%;
+        height: auto;
+        box-shadow: 1px 2px 7px 1px #0000001a;
+        border: none;
+        padding: 3em;
+        top: 110px;
+    }
+    .card__one>h3 {
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0;
+    }
+    .card__one>button {
+        box-shadow: 1px 2px 8px 1px #0000001a;
+        border: none;
+        background-color: hsl(322, 100%, 66%);
+        border-radius: 28px;
+        cursor: pointer;
+        color: #ffffff;
+        padding: 16px 69px;
+        text-decoration: none;
+        font-weight: bold;
+        height: 60px;
+        width: 300px;
+    }
+    .tercera__container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 30% repeat(2, auto);
+        grid-template-areas: "uno" "dos" "tres";
+        grid-gap: 2em;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .tercera__container-sub {
+        grid-area: uno;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "iconouno textouno" "iconodos textodos" "iconotres textotres";
+        grid-auto-flow: column;
+        grid-gap: 10px;
+    }
+    .tercera__container-sub>img {
+        padding-top: 13px;
+    }
+    .iconouno {
+        padding: 5px;
+    }
+    .tercera__container-sub>p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 7px;
+    }
+    .tercera__container-three {
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+    }
+    .tercera__container-three>a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    .tercera__container-four {
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+    }
+    .tercera__container-four>a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    .tercera__container-five {
+        grid-area: tres;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tercera__container-five>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+    .tercera__container-five>a>i {
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .tercera__container-six {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .tercera__container-six {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
