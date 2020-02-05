@@ -21,12 +21,13 @@ h1 {
 .primera>nav {
     display: flex;
     justify-content: space-between;
-    padding: 3em 5em;
+    align-items: center;
+    padding: 3em 2em;
 }
 
 .primera>nav>img {
     width: auto;
-    height: 2em;
+    height: 1.5em;
 }
 
 .primera>nav>button {
@@ -279,4 +280,88 @@ h1 {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .primera {
+        margin-bottom: 5em;
+    }
+    .primera>nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3em 2em;
+    }
+    .primera>nav>button {
+        padding: 15px 35px;
+    }
+    .primera>main {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "textos" "imagen";
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .primera__textos {
+        grid-area: textos;
+        padding: 0 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primera__textos>h1 {
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+    }
+    .primera__textos>p {
+        line-height: 1.5;
+        margin: 1.5em 0 0 0;
+        padding: 0 2em;
+        text-align: center;
+    }
+    .primera__textos>button {
+        padding: 16px 69px;
+        font-weight: bold;
+        margin: 2.5em 0;
+        max-width: 50%;
+    }
+    .primera__imagen {
+        display: flex;
+        justify-content: center;
+    }
+    .primera__imagen>img {
+        width: 80%;
+        height: auto;
+    }
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2em 5em;
+    }
+    .card-imagen {
+        max-width: 70%;
+        height: auto;
+        padding: 2em 2em;
+    }
+    .card-imagen>img {
+        width: 100%;
+        height: auto;
+    }
+    .card-textos {
+        padding: 2em 3em 2em 2em;
+        max-width: 80%;
+        line-height: 1.5;
+    }
+    .card-textos>h3 {
+        text-align: center;
+    }
+    .card-textos>p {
+        text-align: center;
+    }
+    .invert {
+        order: 0;
+    }
 }
